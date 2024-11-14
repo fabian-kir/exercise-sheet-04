@@ -48,3 +48,6 @@ public class PaulesFriendsGame extends InternalPaulesFriendsGame {
 		createPaulesFriends();
 	}
 }
+
+
+// This is a git test to mika
