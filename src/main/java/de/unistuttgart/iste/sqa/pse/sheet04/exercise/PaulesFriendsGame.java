@@ -38,6 +38,7 @@ public class PaulesFriendsGame extends InternalPaulesFriendsGame {
 		Hamster Paula = new Hamster(territoryPaula,locationPaula, directionPaula, grainCountPaula);
 
 		// Hint: Be careful with the location of the new hamsters
+		Ronnie.move();
 	}
 
 	/**
