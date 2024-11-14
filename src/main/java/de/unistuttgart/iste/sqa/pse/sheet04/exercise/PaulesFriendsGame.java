@@ -21,16 +21,16 @@ public class PaulesFriendsGame extends InternalPaulesFriendsGame {
 		// TODO initialize variables below with values according to exercise 1 of sheet 4
 		
 		// Local variables for Ronnie
-		Location locationRonnie;
-		Direction directionRonnie;
-		Territory territoryRonnie;
-		Integer grainCountRonnie;
+		Location locationRonnie = new Location(7, 7);
+		Direction directionRonnie = Direction.NORTH;
+		Territory territoryRonnie = game.getTerritory();
+		Integer grainCountRonnie = 2;
 		
 		// Local variables for Paula
-		Location locationPaula;
-		Direction directionPaula;
-		Territory territoryPaula;
-		Integer grainCountPaula;
+		Location locationPaula = new Location(0, 7);
+		Direction directionPaula = Direction.EAST;
+		Territory territoryPaula = game.getTerritory();
+		Integer grainCountPaula = 5;
 		
 		// TODO create hamsters according to exercise 1 of sheet 4
 
