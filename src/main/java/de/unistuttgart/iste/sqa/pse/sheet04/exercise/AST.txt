@@ -1,0 +1,30 @@
+package de.unistuttgart.iste.sqa.pse.sheet04.exercise;
+
+public class AST {
+    class PersonalCharacter {
+        Model getModel() {
+            return character.getModel();
+        }
+
+        void sketch() {
+            gui.sketchCharacter(this.getModel());
+        }
+    }
+}
+
+
+---
+
+// Korrekturanmerkung: 'substring' ist natürlich eine Methode und keine Operation, ich weiß allerdings nicht wie kurz oder Pseudocode-mäßig die String-Klasse andeuten könnte ...
+/**
+ * @requires startIndex < endIndex as otherwise cutting out a part of the string is impossible / meaningless
+ * @requires endIndex <= the String which the cutout is performed on
+ * @param startIndex: int, describing the start index of the cutout, musst therefore be at least 0
+ * @param endIndex: int, describing the end index of the cutout
+ * @returns str, which is the cutout
+ * @ensures: the return string will be of length endIndex-startIndex, and at most as long as the input string
+ */
+
+
+String substring(int startIndex, int endIndex) {...}
+
