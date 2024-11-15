@@ -5,6 +5,39 @@ Fabian Kirschenmann, 3787773, st193208@stud.uni-stuttgart.de
 Mika Hepper, 3787375,
 st193543@stud.uni-stuttgart.de
 
+1. 
+(c)
+i)	Der Bezeichner „4LeggedAnimal“ ist ein lexikalischer Fehler, da laut Definition keine Zahl am Anfang eines Bezeichners sein darf.
+
+ii)	Zeile 7: Vor „stop()“ fehlt „void“, da ohne „void“ der Compiler nicht weiß was der Rückgabetyp für die folgenden Zeilen ist, somit der AST nicht gebaut werden kann und ein syntaktischer Fehler geworfen wird.
+Zeile 4: 
+„backfeet.pushOff((;“ wirft einen Syntaktischen Fehler, da die Klammern falsch gesetzt wurden. Richtig wäre „backfeet.pushOff();“, so könnte der AST gebaut werden.
+
+iii)	Zeile 2: Rückgabe fehlt, somit kann der AST zwar gebaut werden, jedoch erwartet boolean einen booleschen wert (true/false) als Rückgabe, weshalb während der Laufzeit ein Fehler geworfen wird.
+Zeile 16: 
+„Integer“ muss in „String“ umgewandelt werden, da der Return typ ein String ist und somit ein statisch semantischer Fehler geworfen wird.
+
+iv)	1.Möglichkeit:
+In Zeile 11 wird „name“ als z.B. „Hallo“, eingegeben, dieser ist jedoch als integer definiert, somit würde ein dynamisch semantischer Fehler geworfen werden.
+2.Möglichkeit:
+Wenn „“frontFeet“ oder „backFeet“ nicht initialisiert wurden, somit den Wert „null“ haben, wird während der Luaufzeit eine „NullPointerException“ geworfen. 
+
+v)	Zeile 8: 
+„backFeet .stop()“ ist ein Stilfehler und sollte wie folgt geschrieben werden: „backFeet.stop()“, ohne Leerzeichen dazwischen, damit das Programm leserlicher und korrekter geschrieben wird.
+Zeile 9:
+„backFeet.stop();}“ ist ein Stil Fehler und sollte wie folgt aussehen: „backFeet.stop();
+}“,
+dadurch ist klarer wie die Programmstruktur aussieht, welches den Code leserlicher und korrekter macht.
+vi)	Weitere Fehler:
+Zeile 4:
+„backfeet“ sollte, um eine bessere Struktur, Leserlichkeit und Korrektheit im Code zu haben, wie folgt aussehen: „backFeet“. Außerdem könnte es passieren dass der Compiler „backfeet“ nicht erkennt, wodurch ein syntaktischer Fehler auftrete würde.
+Zeile 12:
+In der Zeile „meowmessage(message, Integer name)“ fehlt in der Klammer vor dem ausdruck „message“ ein Klassentyp „String“. Dadurch würde der AST nicht richtig gebaut werden und ein syntaktischer Fehler auftreten.
+Außerdem ist ein Stilfehler vorhanden, da „meowmessage“ wie folgt notiert werden sollte, um eine bessere Struktur, Leserlichkeit und Korrektheit im Code zu haben: „meowMessage“.
+Zeile 12/13:
+Anstatt „name“ in den Klammern als Argument zu haben sollte rein logisch gesehen „message“ an stattdessen eingefügt werden. „message“ ist definiert als „String“, wodurch unsere Nachricht richtig gespeichert wird und durch die Ausgabe in Zeile 13 auch tatsächlich ausgegeben, welches unsere Namensgebung der Operation „meowMessage(…) {}“ somit auch tatsächlich erfüllt. (logischer Fehler?)
+
+
 2. (a)
 - die substring-Operation schneidet einen kleineren String aus dem Eingabestring heraus. Dabei gibt das erste Argument den Startindex und das zweite Argument den Endindex dieses Ausschnitts an. 
 - Die Zeile 3 gibt in die Konsole also das Ergebnis dieser Operation aus. Wir können den String durchnummerieren beginnend von 0 (P hat also den Index 0). statement[9] == 'R' und statement [15] == s und somit ist result == "Ronnies".
