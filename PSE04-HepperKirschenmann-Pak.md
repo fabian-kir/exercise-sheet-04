@@ -6,6 +6,10 @@ Mika Hepper, 3787375,
 st193543@stud.uni-stuttgart.de
 
 1. 
+(a)
+Der AST befindet sich in der Datei AST.pdf
+(b)
+
 (c)
 i)	Der Bezeichner „4LeggedAnimal“ ist ein lexikalischer Fehler, da laut Definition keine Zahl am Anfang eines Bezeichners sein darf.
 
