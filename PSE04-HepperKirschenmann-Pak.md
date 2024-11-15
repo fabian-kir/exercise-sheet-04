@@ -9,6 +9,17 @@ st193543@stud.uni-stuttgart.de
 (a)
 Der AST befindet sich in der Datei AST.pdf
 (b)
+```java
+class PersonalCharacter {
+    Model getModel() {
+        return character.getModel();
+    }
+
+    void sketch() {
+        gui.sketchCharacter(this.getModel());
+    }
+}   
+```
 
 (c)
 i)	Der Bezeichner „4LeggedAnimal“ ist ein lexikalischer Fehler, da laut Definition keine Zahl am Anfang eines Bezeichners sein darf.
